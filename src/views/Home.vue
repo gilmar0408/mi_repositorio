@@ -4,24 +4,25 @@
 
     <!-- Sección Header -->
     <page-header></page-header>
-
+    <div class="shadow p-3 mb-5 bg-secondary rounded">Regular shadow</div>
     <!-- Sección Noticias -->
     <page-news></page-news>
     <!-- Sección Integrantes-->
 
     
-
+    <div class="shadow p-3 mb-5 bg-secondary rounded">Regular shadow</div>
     <!-- Sección API -->
     <div class="seccion-api container-fluid" id="api">
         <section-api></section-api>
     </div>
 
     
+    <div class="shadow p-3 mb-5 bg-secondary rounded">Regular shadow</div>
 
     <div class="container-fluid  bg-secondary" id="team">
         <div class="row justify-content-center mb-5" >
-          <div class="col mt-5" v-for="(item, index) of team" :key="index">
-            <team-card v-bind:member="item"></team-card>
+          <div class="col mt-5" v-for="(item, index) of clientes" :key="index">
+            <client-card v-bind:cliente="item"></client-card>
           </div>
           
         </div>
@@ -38,7 +39,7 @@
 <script>
 import HelloWorld from '../components/HelloWorld.vue';
 import PageFooter from "../components/PageFooter.vue";
-import TeamCard from "../components/TeamCard.vue";
+import ClientCard from "../components/ClientCard.vue";
 import SectionApi from "../components/SectionApi.vue";
 import PageHeader from "../components/PageHeader.vue";
 import PageNews from "../components/PageNews";
@@ -53,32 +54,32 @@ export default {
     PageHeader,
     PageNews,
     PageServices,
-    TeamCard,
+    ClientCard,
     SectionApi,
   },
 
   data() {
     return {
       title: "Vivo dentro de VUE",
-      team: [
+      clientes: [
         {
           codigo: 1,
           nombre: "Laura Marcela Londoño",
-          descripcion: "Estudiante de Ingeniería de Sistemas de la Universidad del Quindío. Actualmente tiene 20 años y su pasatiempo es tocar guitarra.",
+          descripcion: "Este es un ejemplo de un cliente satisfecho con el servicio prestado.",
           rol: "Desarrolladora backend",
           image: "https://www.fonewalls.com/wp-content/uploads/Night-Minimal-Background-HD-Wallpaper-300x400.jpg",
         },
         {
           codigo: 2,
           nombre: "Nancy Agudelo Castro",
-          descripcion: "Ingeniera Industrial de la Universidad de Ibagué. Actualmente tiene 23 años y su pasatiempo es jugar baloncesto.",
+          descripcion: "Este es un ejemplo de un cliente satisfecho con el servicio prestado.",
           rol: "Desarrolladora frontend",
           image: "https://www.fonewalls.com/wp-content/uploads/Night-Minimal-Background-HD-Wallpaper-300x400.jpg",
         },
         {
           codigo: 3,
           nombre: "Gilmar Arley Gonzalez",
-          descripcion: "Estudiante de Ingeniería de Sistemas de la Universidad El Bosque. Actualmente tiene 25 años y su pasatiempo es el ciclismo.",
+          descripcion: "Este es un ejemplo de un cliente satisfecho con el servicio prestado.",
           rol: "Desarrollador backend",
           image: "https://www.fonewalls.com/wp-content/uploads/Night-Minimal-Background-HD-Wallpaper-300x400.jpg",
         },

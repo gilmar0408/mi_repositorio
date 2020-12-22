@@ -11,17 +11,17 @@
                     <!-- Grid column -->
                     <div class="col-md-4 mt-md-0 mt-3">
                         <!-- Content -->
-                        <h5 class="text-uppercase font-weight-bold">Sitio web correspondiente al sprint 2.</h5>
+                        <h5 class="text-uppercase font-weight-bold">Contactanos!!</h5>
                         <p>
                             <br>
-                            Ciclo 3 - Desarrollo de software - Semana 2
+                            Ciclo 3 - Desarrollo de software - Proyecto Final
                             <br>
                             Mision TIC 2022
                         </p>                        
                         <b>Enlace al repositorio:</b>
                         <br>
-                        <a href="https://github.com/marcelau2000/semana-1-138.git"
-                            target="_blank">https://github.com/marcelau2000/semana-1-138.git</a>
+                        <a href="https://github.com/davidpeinado96/ProyectoFinal_grupo138"
+                            target="_blank">https://github.com/davidpeinado96/ProyectoFinal_grupo138</a>
                         <a href=""></a>
                         
                     </div>
@@ -30,34 +30,34 @@
                     <!-- Grid column -->
                     <div class="col-md-8 mb-md-0 mb-3">
                         <!-- Content -->
-                        <h5 class="text-uppercase ml-3 font-weight-bold">Datos de contacto de los desarrolladores:</h5>
+                        <h5 class="text-uppercase ml-3 font-weight-bold">Nuestra presencia en colombia:</h5>
                         <div class="container-fluid row">
                             <div class="col-md-4 mt-md-0 mt-3 small">
-                                Nombre: Laura Marcela Londoño López
+                                Bogotá:
                                 <br>
-                                Ciudad: Armenia
+                                Dirección: Cll 143 N 53-21
                                 <br>
-                                Teléfono: 3176085552
+                                Teléfono: 3198321642
                                 <br>
-                                Email: marcelix2000@gmail.com
+                                Email: BogotaNRevolution@gmail.com
                             </div>
                             <div class="col-md-4 mt-md-0 mt-3 small">
-                                Nombre: Nancy Alejandra Agudelo Castro
+                                Medellín:
                                 <br>
-                                Ciudad: Ibagué
+                                Dirección: Cra  23  N 38-21
                                 <br>
-                                Teléfono: 3175304470
+                                Teléfono: 3102718429
                                 <br>
-                                Email: nancy.agudelo05@gmail.com
+                                Email: MedellínNRevolution@gmail.com
                             </div>
                             <div class="col-md-4 mt-md-0 mt-3 small">
-                                Nombre: Gilmar Arley Gonzalez
+                                Cali:
                                 <br>
-                                Ciudad: Bogotá
+                                Dirección: Cra  45  N 19-21
                                 <br>
-                                Teléfono: 3207296340
+                                Teléfono: 3142945162
                                 <br>
-                                Email: gilmar0408@hotmail.com
+                                Email: CaliNRevolution@hotmail.com
                             </div>
                         </div>
                     </div>

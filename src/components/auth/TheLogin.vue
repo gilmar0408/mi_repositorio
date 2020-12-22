@@ -1,9 +1,9 @@
 <template>
 
 
-    <form class="login   text-white bg-dark mt-3 mb-3" style="width:18rem;"  >
+    <form class="login   text-white bg-dark mt-5 mb-5" style="width:18rem;"  >
       <div class="form-group  mt-3 ml-3 mr-3">
-        <label for="exampleInputEmail1">Email address</label>
+        <label for="exampleInputEmail1">Correo electrónico</label>
         <input 
           v-model="login.email"
           type="email"
@@ -12,11 +12,11 @@
           aria-describedby="emailHelp"
         />
         <small id="emailHelp" class="form-text text-muted"
-          >We'll never share your email with anyone else.</small
+          >Nunca compartiremos su correo electrónico con nadie.</small
         >
       </div>
       <div class="form-group ml-3 mr-3">
-        <label for="exampleInputPassword1">Password</label>
+        <label for="exampleInputPassword1">Contraseña</label>
         <input
           v-model="login.password"
           type="password"
@@ -31,10 +31,10 @@
         </pre> -->
       </div>
 
-      <div class="botones row justify-content-center">
+      <div class="botones row justify-content-center  mb-5">
       <div class="botonlogin">
       <button @click.prevent="loginUser" type="submit" class="btn btn-success mt-5 mb-3">
-        Login
+        Iniciar sesión
       </button>
       </div>
       

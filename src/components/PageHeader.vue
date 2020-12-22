@@ -44,7 +44,7 @@
                 <a class="nav-link" href="#footer">Contacto</a>
               </li>
               <li class="menu-principal__item nav-item">
-                <a  @click.prevent="login"   class="nav-link" >Login</a>
+                <a  @click.prevent="login"   class="nav-link" >Iniciar sesión</a>
               </li>
               
 
@@ -56,14 +56,16 @@
       </div>
 
       
+
+      
         
-          <v-carousel hide-delimiters>
-            <v-carousel-item
-              v-for="(item, i) in items"
-              :key="i"
-              :src="item.src"
-            ></v-carousel-item>
-          </v-carousel>
+      <v-carousel hide-delimiters>
+        <v-carousel-item
+          v-for="(item, i) in items"
+          :key="i"
+          :src="item.src"
+        ></v-carousel-item>
+      </v-carousel>
         
       
     </header>
