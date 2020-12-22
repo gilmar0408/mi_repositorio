@@ -65,10 +65,27 @@
                       <v-textarea
                         v-model="editedItem.descripcion"
                         label="Descripción"
+
                         auto-grow
                         no-resize
                       ></v-textarea>
                     </v-col>
+
+
+                    <v-col
+                      cols="12"
+                    >
+                      <v-textarea
+                        v-model="editedItem.imagen"
+                        label="Imagen"
+                        
+                        auto-grow
+                        no-resize
+                      ></v-textarea>
+                    </v-col>
+
+
+
                     <v-col
                       cols="12"
                     >
@@ -79,16 +96,9 @@
                         no-resize
                       ></v-textarea>
                     </v-col>
-                    <v-col
-                      cols="12"
-                    >
-                      <v-textarea
-                        v-model="editedItem.imagen"
-                        label="Imagen"
-                        auto-grow
-                        no-resize
-                      ></v-textarea>
-                    </v-col>
+                    
+
+
                      <v-col
                       cols="12"
                     >
@@ -197,8 +207,9 @@ export default {
       },
       { text: 'Código', value: 'codigo' },
       { text: 'Descripción', value: 'descripcion' },
+      
       { text: 'Resumen', value: 'resumen' },
-      { text: 'Imagen', value: 'imagen' },
+      
       { text: 'Categoría', value: 'categoria.nombre' },
       { text: 'Estado', value: 'estado' },
       { text: 'Actions', value: 'actions', sortable: false },

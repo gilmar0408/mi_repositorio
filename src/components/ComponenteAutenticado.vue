@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar app>
+    <v-app-bar color="#267E60" app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>Application</v-toolbar-title>
@@ -12,7 +12,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" fixed temporary>
+    <v-navigation-drawer color="#53756B" v-model="drawer" fixed temporary>
       <v-list>
         <v-list-item :to="{ name: 'Home' }">
           <v-list-item-icon>
@@ -67,8 +67,10 @@
     </v-navigation-drawer>
 
     <v-main class="grey lighten-2">
+
+      
       <v-container>
-        
+
         <router-view />
       </v-container>
     </v-main>

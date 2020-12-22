@@ -8,7 +8,7 @@
     <nav class="navbar navbar-light" style="background-color: #267E60">
       <a class="navbar-brand" href="#">
         <img
-          src="../assets/logo.png"
+          src="../assets/logo.jpg"
           width="30"
           height="30"
           class="d-inline-block align-top"
@@ -27,16 +27,7 @@
       <the-login></the-login>
     </div>
 
-    <div >
-         <div class="imagen-noticia">
-                <img
-                  src="https://www.joseantoniosanchez.es/wp-content/uploads/2011/09/PanoChillon.jpg"
-                  alt="headerLogin"
-                  width="1600px"
-                  height="300px"
-                />
-          </div>
-      </div>
+    <page-cases></page-cases>
 
   </div>
 
@@ -47,8 +38,9 @@
 
 <script>
 import TheLogin from '../components/auth/TheLogin.vue'
+import PageCases from '../components/PageCases.vue';
 export default {
-  components: { TheLogin },
+  components: { TheLogin, PageCases },
 
   methods: {
 

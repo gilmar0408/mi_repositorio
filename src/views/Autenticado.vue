@@ -1,4 +1,5 @@
 <template>
+     
     <componente-autenticado></componente-autenticado>
 </template>
 <script>

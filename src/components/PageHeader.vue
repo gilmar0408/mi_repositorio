@@ -29,13 +29,13 @@
                 <a class="nav-link" href="">Inicio</a>
               </li>
               <li class="menu-principal__item nav-item">
-                <a class="nav-link" href="#news">Quienes somos</a>
+                <a class="nav-link" href="#Acerca de nosotros">Acerca de nosotros</a>
               </li>
               <li class="menu-principal__item nav-item">
                 <a class="nav-link" href="#api">Servicios</a>
               </li>
               <li class="menu-principal__item nav-item">
-                <a class="nav-link" href="#team">Clientes</a>
+                <a class="nav-link" href="#stats">Clientes</a>
               </li>
               <li class="menu-principal__item nav-item">
                 <a  @click.prevent="irServicios"   class="nav-link" >Mas información servicios</a>
@@ -80,16 +80,16 @@ export default {
     return {
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          src: "https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_960_720.png",
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+          src: "https://cdn.pixabay.com/photo/2015/11/05/09/52/touch-screen-1023966_960_720.jpg",
         },
       ],
     };
