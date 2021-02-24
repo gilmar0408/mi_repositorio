@@ -215,7 +215,7 @@ export default {
     },
 
     list(){
-      axios.get('http://localhost:3000/api/usuario/list').then(response=>{
+      axios.get(/* petición para pruebas locales 'http://localhost:3000/api/usuario/list' */  'https://whispering-everglades-53693.herokuapp.com/api/usuario/list' ).then(response=>{
         this.usuarios = response.data;
         this.cargando=false;
       }).catch(error =>{
@@ -238,7 +238,7 @@ export default {
     deleteItemConfirm () {
        if (this.editedItem.estado === 1) {
         //put
-        axios.put('http://localhost:3000/api/usuario/deactivate',{
+        axios.put(/* petición para pruebas locales 'http://localhost:3000/api/usuario/deactivate' */ 'https://whispering-everglades-53693.herokuapp.com/api/usuario/deactivate' ,{
           "id":this.editedItem.id,
         }).then(response=>{
         this.list();
@@ -248,7 +248,7 @@ export default {
        
       } else {
         //post
-        axios.put('http://localhost:3000/api/usuario/activate',{
+        axios.put(/* petición para pruebas locales 'http://localhost:3000/api/usuario/activate' */ 'https://whispering-everglades-53693.herokuapp.com/api/usuario/activate',{
           "id":this.editedItem.id,
         }).then(response=>{
         this.list();
@@ -278,7 +278,7 @@ export default {
     save () {
       if (this.editedIndex > -1) {
         //put
-        axios.put('http://localhost:3000/api/usuario/update',{
+        axios.put(/* petición para pruebas locales 'http://localhost:3000/api/usuario/update' */ 'https://whispering-everglades-53693.herokuapp.com/api/usuario/update',{
           "id":this.editedItem.id,
           "nombre":this.editedItem.nombre,
           "email":this.editedItem.email,
@@ -292,7 +292,7 @@ export default {
        
       } else {
         //post
-        axios.post('http://localhost:3000/api/usuario/add',{
+        axios.post(/* petición para pruebas locales 'http://localhost:3000/api/usuario/add' */ 'https://whispering-everglades-53693.herokuapp.com/api/usuario/add' ,{
           "estado":this.editedItem.estado,
           "nombre":this.editedItem.nombre,
           "email":this.editedItem.email,

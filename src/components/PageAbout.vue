@@ -61,7 +61,7 @@ export default {
   },
   mounted() {
     axios
-      .get(`http://localhost:3000/api/articulo/listActive`)
+      .get(/* petición para pruebas locales `http://localhost:3000/api/articulo/listActive` */ `https://whispering-everglades-53693.herokuapp.com/api/articulo/listActive` )
       .then((response) => {
         this.articulos = response.data;
         console.log(this.articulos);

@@ -270,7 +270,7 @@ export default {
     },
 
     list(){
-      axios.get('http://localhost:3000/api/articulo/list').then(response=>{
+      axios.get(/* petición para pruebas locales 'http://localhost:3000/api/articulo/list' */ 'https://whispering-everglades-53693.herokuapp.com/api/articulo/list' ).then(response=>{
         this.articulos = response.data;
         this.cargando=false;
       }).catch(error =>{
@@ -279,7 +279,7 @@ export default {
     },
 
     listCategoria(){
-      axios.get('http://localhost:3000/api/categoria/list').then(response=>{
+      axios.get(/* petición para pruebas locales 'http://localhost:3000/api/categoria/list' */ 'https://whispering-everglades-53693.herokuapp.com/api/categoria/list'  ).then(response=>{
         this.categorias = response.data;
         this.cargando=false;
       }).catch(error =>{
@@ -303,7 +303,7 @@ export default {
     deleteItemConfirm () {
        if (this.editedItem.estado === 1) {
         //put
-        axios.put('http://localhost:3000/api/articulo/deactivate',{
+        axios.put(/* petición para pruebas locales 'http://localhost:3000/api/articulo/deactivate' */  'https://whispering-everglades-53693.herokuapp.com/api/articulo/deactivate'  ,{
           "id":this.editedItem.id,
         }).then(response=>{
         this.list();
@@ -313,7 +313,7 @@ export default {
        
       } else {
         //post
-        axios.put('http://localhost:3000/api/articulo/activate',{
+        axios.put(/* petición para pruebas locales 'http://localhost:3000/api/articulo/activate' */ 'https://whispering-everglades-53693.herokuapp.com/api/articulo/activate' ,{
           "id":this.editedItem.id,
         }).then(response=>{
         this.list();
@@ -344,7 +344,7 @@ export default {
     save () {
       if (this.editedIndex > -1) {
         //put
-        axios.put('http://localhost:3000/api/articulo/update',{
+        axios.put(/* petición para pruebas locales 'http://localhost:3000/api/articulo/update' */ 'https://whispering-everglades-53693.herokuapp.com/api/articulo/update' ,{
           "id":this.editedItem.id,
           "nombre":this.editedItem.nombre,
           "descripcion":this.editedItem.descripcion,
@@ -360,7 +360,7 @@ export default {
        
       } else {
         //post
-        axios.post('http://localhost:3000/api/articulo/add',{
+        axios.post(/* petición para pruebas locales 'http://localhost:3000/api/articulo/add' */ 'https://whispering-everglades-53693.herokuapp.com/api/articulo/add' ,{
           "estado":this.editedItem.estado,
           "nombre":this.editedItem.nombre,
           "descripcion":this.editedItem.descripcion,

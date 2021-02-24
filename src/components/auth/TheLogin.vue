@@ -69,7 +69,7 @@ export default {
 
   methods: {
     loginUser() {
-      axios.post('http://localhost:3000/api/usuario/login', this.login)
+      axios.post(/* petición para pruebas locales 'http://localhost:3000/api/usuario/login' */ 'https://whispering-everglades-53693.herokuapp.com/api/usuario/login' , this.login)
       .then(response => {
 
         return response.data;

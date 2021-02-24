@@ -20,8 +20,8 @@
                         </p>                        
                         <b>Enlace al repositorio:</b>
                         <br>
-                        <a href="https://github.com/davidpeinado96/ProyectoFinal_grupo138"
-                            target="_blank">https://github.com/davidpeinado96/ProyectoFinal_grupo138</a>
+                        <a href="https://github.com/gilmar0408/mi_repositorio.git"
+                            target="_blank">https://github.com/gilmar0408/mi_repositorio.git</a>
                         <a href=""></a>
                         
                     </div>
